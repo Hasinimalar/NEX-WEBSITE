@@ -482,6 +482,182 @@ background-position:0% 50%;
 }
 
 }
+  /* ================= PAST CONFERENCE ================= */
+
+.past-section{
+padding:120px 10%;
+position:relative;
+text-align:center;
+}
+
+.past-intro{
+max-width:850px;
+margin:0 auto 55px;
+font-size:19px;
+line-height:1.9;
+color:#6d597a;
+}
+
+.past-card{
+max-width:1100px;
+margin:auto;
+
+background:rgba(255,255,255,0.72);
+backdrop-filter:blur(18px);
+
+border-radius:35px;
+padding:45px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+
+position:relative;
+overflow:hidden;
+}
+
+.past-card::before{
+content:"";
+position:absolute;
+width:250px;
+height:250px;
+
+background:linear-gradient(
+135deg,
+#f5c2ff,
+#c084fc,
+#7dd3fc
+);
+
+opacity:0.12;
+border-radius:50%;
+
+top:-100px;
+right:-80px;
+}
+
+.past-year{
+font-size:18px;
+font-weight:600;
+letter-spacing:3px;
+color:#c084fc;
+margin-bottom:10px;
+}
+
+.past-card h3{
+font-size:38px;
+color:#6d597a;
+margin-bottom:18px;
+}
+
+.past-description{
+font-size:17px;
+line-height:1.9;
+max-width:850px;
+margin:auto;
+}
+
+.highlight-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:40px;
+}
+
+.highlight{
+background:rgba(255,255,255,0.55);
+padding:25px 15px;
+border-radius:25px;
+transition:0.4s;
+}
+
+.highlight:hover{
+transform:translateY(-8px);
+}
+
+.highlight-icon{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.highlight h4{
+font-size:18px;
+color:#6d597a;
+margin-bottom:7px;
+}
+
+.highlight p{
+font-size:14px;
+line-height:1.6;
+}
+
+.past-btn{
+display:inline-block;
+margin-top:35px;
+
+padding:14px 32px;
+
+border-radius:50px;
+
+background:linear-gradient(
+135deg,
+#f5c2ff,
+#c084fc,
+#7dd3fc
+);
+
+color:white;
+text-decoration:none;
+
+font-weight:600;
+
+box-shadow:0 10px 25px rgba(192,132,252,0.25);
+
+transition:0.4s;
+}
+
+.past-btn:hover{
+transform:translateY(-5px) scale(1.04);
+}
+
+@media(max-width:768px){
+
+.past-section{
+padding:90px 8%;
+}
+
+.past-card{
+padding:30px;
+border-radius:28px;
+}
+
+.past-card h3{
+font-size:30px;
+}
+
+.highlight-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.past-description{
+font-size:16px;
+}
+
+}
+
+@media(max-width:480px){
+
+.highlight-grid{
+grid-template-columns:1fr;
+}
+
+.past-card h3{
+font-size:26px;
+}
+
+.past-description{
+font-size:15px;
+}
+
+}
 
 /* ================= WHY SECTION ================= */
 
@@ -864,6 +1040,27 @@ Flagship Event • Launching Soon
 </div>
 
 </div>
+
+</div>
+
+</div>
+  <div class="highlight">
+
+<div class="highlight-icon">💻</div>
+
+<h4>Online Conference</h4>
+
+<p>
+The conference was conducted virtually through online sessions.
+</p>
+
+</div>
+
+</div>
+
+<a href="#" class="past-btn">
+View Conference Highlights ✨
+</a>
 
 </div>
 
