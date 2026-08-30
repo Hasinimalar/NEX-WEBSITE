@@ -1,479 +1,2052 @@
-<!DOCTYPE html>
-<html>
-<head>
- <meta name="p:domain_verify" content="dad0b8c5282027c713df4fe75f2c6de9"/>
-  
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<meta name="description" content="NEX is a student-led debate and Model United Nations organization focused on leadership, diplomacy, public speaking, and youth empowerment.">
 
-<meta name="keywords" content="NEX, debate, MUN, Model United Nations, public speaking, leadership, diplomacy, student organization">
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="NEX is a student-led debate and Model United Nations organization founded by Hasinimalar Ganeshkumar, focused on leadership, diplomacy, public speaking, critical thinking and youth empowerment.">
+
+<meta name="keywords" content="NEX, NEX Debate, NEXMUN, Hasinimalar Ganeshkumar, Model United Nations, MUN, debate, youth leadership, diplomacy, public speaking, student organization">
 
 <meta name="author" content="Hasinimalar Ganeshkumar">
 
-  <link rel="icon" type="image/png" href="nex logo.png">
-  
-<title>NEX</title>
+<meta name="robots" content="index, follow">
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#c084fc">
+
+<meta property="og:title" content="NEX | Debate, Diplomacy & Youth Leadership">
+
+<meta property="og:description" content="NEX is a student-led platform empowering young voices through debate, diplomacy, Model United Nations and leadership.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="nex logo.png">
+
+<link rel="canonical" href="https://hasinimalar.github.io/NEX-WEBSITE/">
+
+<link rel="icon" type="image/png" href="nex logo.png">
+
+<title>NEX | Debate, Diplomacy & Youth Leadership</title>
+
+
+<!-- GOOGLE FONTS -->
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<!-- =====================================================
+     STRUCTURED DATA
+===================================================== -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NEX",
+  "alternateName": "NEX Debate Organization",
+  "url": "https://hasinimalar.github.io/NEX-WEBSITE/",
+  "logo": "https://hasinimalar.github.io/NEX-WEBSITE/nex%20logo.png",
+  "description": "A student-led organization focused on debate, diplomacy, Model United Nations, public speaking, leadership and youth empowerment.",
+  "founder": {
+    "@type": "Person",
+    "name": "Hasinimalar Ganeshkumar"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hasinimalar Ganeshkumar",
+  "url": "https://hasinimalar.github.io/NEX-WEBSITE/",
+  "jobTitle": "Founder, Organizer and Developer of NEX",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "NEX"
+  }
+}
+</script>
+
 
 <style>
 
+/* =====================================================
+   GLOBAL
+===================================================== */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins', sans-serif;
 
-background:
-linear-gradient(rgba(255,247,252,0.76),
-rgba(247,241,255,0.76),
-rgba(238,247,255,0.76)),
-url('background.png');
+    font-family:'Poppins',sans-serif;
 
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-background-attachment:fixed;
+    background:
+    linear-gradient(
+        rgba(255,247,252,0.76),
+        rgba(247,241,255,0.76),
+        rgba(238,247,255,0.76)
+    ),
+    url('background.png');
 
-background-blend-mode:soft-light;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 
-overflow-x:hidden;
+    background-blend-mode:soft-light;
 
-color:#5f4b66;
+    overflow-x:hidden;
+
+    color:#5f4b66;
 }
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
 
 nav{
-width:100%;
-position:fixed;
-top:0;
-left:0;
 
-padding:18px 45px;
+    width:100%;
 
-background:rgba(255,255,255,0.25);
-backdrop-filter:blur(14px);
+    position:fixed;
 
-z-index:1000;
+    top:0;
+    left:0;
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+    padding:18px 45px;
 
-box-shadow:0 8px 30px rgba(0,0,0,0.05);
+    background:rgba(255,255,255,0.28);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,0.45);
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:
+        0 8px 35px rgba(0,0,0,0.04);
 }
+
 
 .logo{
-font-family:'Great Vibes', cursive;
-font-size:45px;
-color:#c8a2ff;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:45px;
+
+    color:#c8a2ff;
+
+    text-shadow:
+        0 0 20px rgba(200,162,255,0.35);
 }
+
 
 .navlinks{
-display:flex;
-gap:28px;
+
+    display:flex;
+
+    gap:30px;
 }
+
 
 .navlinks a{
-text-decoration:none;
-color:#6d597a;
-font-weight:500;
+
+    text-decoration:none;
+
+    color:#6d597a;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:0.35s;
 }
 
-.hero{
-min-height:100vh;
 
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+.navlinks a::after{
 
-text-align:center;
-padding:120px 10%;
+    content:"";
 
-position:relative;
-z-index:2;
+    position:absolute;
+
+    left:0;
+
+    bottom:-7px;
+
+    width:0;
+
+    height:2px;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f5c2ff,
+            #c084fc,
+            #7dd3fc
+        );
+
+    transition:0.35s;
 }
 
-.hero h1{
-font-family:'Great Vibes', cursive;
-font-size:120px;
-color:#c8a2ff;
-text-shadow:0 0 25px rgba(200,162,255,0.6);
-animation:float 5s ease-in-out infinite;
+
+.navlinks a:hover{
+
+    color:#c084fc;
 }
 
-.hero p{
-font-size:26px;
-margin-top:15px;
-line-height:1.8;
-max-width:850px;
+
+.navlinks a:hover::after{
+
+    width:100%;
 }
 
-.explore-btn{
-padding:18px 48px;
-margin-top:35px;
 
-border:none;
-border-radius:45px;
-
-background:linear-gradient(135deg,#f5c2ff,#c084fc,#7dd3fc);
-
-color:white;
-font-size:18px;
-font-weight:600;
-
-cursor:pointer;
-
-box-shadow:0 12px 35px rgba(192,132,252,0.35);
-
-transition:0.4s;
-}
-
-.explore-btn:hover{
-transform:translateY(-6px) scale(1.04);
-}
-
-.section{
-padding:120px 10%;
-text-align:center;
-}
-
-.section-title{
-font-size:70px;
-font-family:'Great Vibes', cursive;
-color:#c8a2ff;
-margin-bottom:50px;
-}
-
-.cards{
-display:flex;
-justify-content:center;
-gap:35px;
-flex-wrap:wrap;
-}
-
-.card{
-background:rgba(255,255,255,0.68);
-backdrop-filter:blur(14px);
-
-padding:45px;
-border-radius:35px;
-
-width:320px;
-
-box-shadow:0 15px 40px rgba(0,0,0,0.06);
-
-transition:0.4s;
-}
-
-.card:hover{
-transform:translateY(-12px);
-}
-
-.card h3{
-font-size:35px;
-color:#c8a2ff;
-margin-bottom:20px;
-}
-
-.card p{
-line-height:1.9;
-font-size:18px;
-}
-
-.quote{
-font-size:34px;
-line-height:1.8;
-max-width:900px;
-margin:auto;
-font-family:'Great Vibes', cursive;
-color:#b78ce8;
-}
+/* =====================================================
+   DOODLES
+===================================================== */
 
 .doodle{
-position:fixed;
-opacity:0.16;
-pointer-events:none;
-z-index:0;
+
+    position:fixed;
+
+    opacity:0.14;
+
+    pointer-events:none;
+
+    z-index:0;
+
+    color:#c084fc;
 }
 
-.d1{top:120px;left:70px;font-size:70px;animation:spin 12s linear infinite;}
-.d2{top:240px;right:90px;font-size:80px;animation:float 6s ease-in-out infinite;}
-.d3{bottom:120px;left:150px;font-size:75px;animation:spin 15s linear infinite reverse;}
-.d4{bottom:100px;right:140px;font-size:70px;animation:float 7s ease-in-out infinite;}
-.d5{top:55%;left:12%;font-size:45px;animation:float 5s ease-in-out infinite;}
-.d6{top:65%;right:15%;font-size:55px;animation:spin 14s linear infinite;}
-
-@keyframes float{
-0%{transform:translateY(0px);} 
-50%{transform:translateY(-18px);} 
-100%{transform:translateY(0px);} 
+.d1{
+    top:120px;
+    left:70px;
+    font-size:70px;
+    animation:spin 12s linear infinite;
 }
 
-@keyframes spin{
-0%{transform:rotate(0deg);} 
-100%{transform:rotate(360deg);} 
+.d2{
+    top:240px;
+    right:90px;
+    font-size:80px;
+    animation:float 6s ease-in-out infinite;
 }
-  /* ================= MOBILE RESPONSIVE ================= */
 
-@media(max-width:1024px){
+.d3{
+    bottom:120px;
+    left:150px;
+    font-size:75px;
+    animation:spin 15s linear infinite reverse;
+}
+
+.d4{
+    bottom:100px;
+    right:140px;
+    font-size:70px;
+    animation:float 7s ease-in-out infinite;
+}
+
+.d5{
+    top:55%;
+    left:12%;
+    font-size:45px;
+    animation:float 5s ease-in-out infinite;
+}
+
+.d6{
+    top:65%;
+    right:15%;
+    font-size:55px;
+    animation:spin 14s linear infinite;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:130px 10% 100px;
+
+    position:relative;
+
+    z-index:2;
+
+    overflow:hidden;
+}
+
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#e6ccff;
+
+    filter:blur(150px);
+
+    opacity:0.28;
+
+    top:-200px;
+    left:-180px;
+
+    z-index:-1;
+}
+
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#c8edff;
+
+    filter:blur(150px);
+
+    opacity:0.25;
+
+    bottom:-220px;
+    right:-180px;
+
+    z-index:-1;
+}
+
 
 .hero h1{
-font-size:80px;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:130px;
+
+    font-weight:400;
+
+    color:#c8a2ff;
+
+    text-shadow:
+        0 0 25px rgba(200,162,255,0.6),
+        0 0 70px rgba(200,162,255,0.25);
+
+    animation:float 5s ease-in-out infinite;
 }
+
+
+.hero-line{
+
+    width:90px;
+
+    height:2px;
+
+    margin:20px auto;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c084fc,
+            transparent
+        );
+}
+
 
 .hero p{
-font-size:20px;
+
+    font-size:25px;
+
+    margin-top:5px;
+
+    line-height:1.8;
+
+    max-width:850px;
+
+    color:#6d597a;
 }
+
+
+.hero-sub{
+
+    font-size:13px !important;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#a087aa !important;
+
+    margin-top:18px !important;
+}
+
+
+/* HERO BUTTON */
+
+.explore-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:17px 38px;
+
+    margin-top:38px;
+
+    border:none;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5c2ff,
+            #c084fc,
+            #7dd3fc
+        );
+
+    background-size:200% 200%;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:0.5px;
+
+    box-shadow:
+        0 12px 35px rgba(192,132,252,0.35);
+
+    transition:0.4s;
+
+    animation:gradientMove 7s ease infinite;
+}
+
+
+.explore-btn:hover{
+
+    transform:
+        translateY(-6px)
+        scale(1.04);
+
+    box-shadow:
+        0 20px 45px rgba(192,132,252,0.42);
+}
+
+
+/* =====================================================
+   GENERAL SECTION
+===================================================== */
+
+.section{
+
+    padding:130px 10%;
+
+    text-align:center;
+
+    position:relative;
+}
+
 
 .section-title{
-font-size:55px;
+
+    font-size:70px;
+
+    font-family:'Great Vibes',cursive;
+
+    font-weight:400;
+
+    color:#c8a2ff;
+
+    margin-bottom:55px;
+
+    text-shadow:
+        0 0 20px rgba(200,162,255,0.25);
 }
 
-.section-text{
-font-size:19px;
-line-height:2;
-}
+
+/* =====================================================
+   AIM CARDS
+===================================================== */
 
 .cards{
-gap:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
 }
+
 
 .card{
-width:320px;
+
+    background:
+        rgba(255,255,255,0.62);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    padding:42px 35px;
+
+    border-radius:35px;
+
+    width:320px;
+
+    min-height:280px;
+
+    border:
+        1px solid rgba(255,255,255,0.78);
+
+    box-shadow:
+        0 20px 50px rgba(80,55,95,0.07);
+
+    transition:
+        transform 0.45s,
+        box-shadow 0.45s;
+
+    position:relative;
+
+    overflow:hidden;
 }
 
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:160px;
+    height:160px;
+
+    border-radius:50%;
+
+    background:#e6ccff;
+
+    filter:blur(55px);
+
+    opacity:0.25;
+
+    top:-80px;
+
+    right:-70px;
 }
 
-/* ================= TABLETS ================= */
+
+.card:hover{
+
+    transform:
+        translateY(-14px)
+        scale(1.02);
+
+    box-shadow:
+        0 30px 65px rgba(192,132,252,0.15);
+}
+
+
+.card h3{
+
+    font-size:30px;
+
+    color:#c084fc;
+
+    margin-bottom:22px;
+
+    position:relative;
+}
+
+
+.card p{
+
+    line-height:1.9;
+
+    font-size:15px;
+
+    color:#74647b;
+
+    position:relative;
+}
+
+
+/* =====================================================
+   PERSON BEHIND NEX
+===================================================== */
+
+.founder-section{
+
+    padding:150px 7%;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.founder-inner{
+
+    max-width:1250px;
+
+    margin:auto;
+
+    padding:75px;
+
+    display:grid;
+
+    grid-template-columns:0.85fr 1.15fr;
+
+    align-items:center;
+
+    gap:80px;
+
+    border-radius:55px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.70),
+            rgba(255,255,255,0.38)
+        );
+
+    backdrop-filter:blur(30px);
+
+    -webkit-backdrop-filter:blur(30px);
+
+    border:
+        1px solid rgba(255,255,255,0.82);
+
+    box-shadow:
+
+        0 35px 90px rgba(80,55,95,0.10),
+
+        0 0 100px rgba(192,132,252,0.10);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.founder-inner::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+    height:450px;
+
+    background:#e6ccff;
+
+    filter:blur(140px);
+
+    opacity:0.30;
+
+    top:-250px;
+    right:-150px;
+}
+
+
+.founder-inner::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:#bfe8ff;
+
+    filter:blur(130px);
+
+    opacity:0.28;
+
+    bottom:-220px;
+    left:-150px;
+}
+
+
+/* LEFT VISUAL */
+
+.founder-visual{
+
+    min-height:430px;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+.founder-glow{
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    border-radius:50%;
+
+    background:#dcbaff;
+
+    filter:blur(100px);
+
+    opacity:0.32;
+}
+
+
+.founder-monogram{
+
+    width:280px;
+    height:280px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.85),
+            rgba(238,220,255,0.55)
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.9);
+
+    box-shadow:
+
+        0 25px 70px rgba(192,132,252,0.22),
+
+        inset 0 0 35px rgba(255,255,255,0.7);
+
+    position:relative;
+
+    z-index:3;
+
+    animation:founderFloat 5s ease-in-out infinite;
+}
+
+
+.founder-monogram::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-18px;
+
+    border-radius:50%;
+
+    border:
+        1px solid rgba(192,132,252,0.25);
+
+    animation:
+        founderRotate 18s linear infinite;
+}
+
+
+.founder-monogram::after{
+
+    content:"✦";
+
+    position:absolute;
+
+    top:-17px;
+
+    right:35px;
+
+    font-size:25px;
+
+    color:#c084fc;
+}
+
+
+.founder-monogram span{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:145px;
+
+    line-height:0.8;
+
+    color:#c8a2ff;
+
+    text-shadow:
+        0 0 25px rgba(200,162,255,0.45);
+}
+
+
+.founder-monogram small{
+
+    margin-top:18px;
+
+    font-size:12px;
+
+    letter-spacing:7px;
+
+    font-weight:600;
+
+    color:#8d7895;
+}
+
+
+/* FLOATING BADGES */
+
+.founder-badge{
+
+    position:absolute;
+
+    padding:11px 19px;
+
+    border-radius:40px;
+
+    background:
+        rgba(255,255,255,0.68);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    border:
+        1px solid rgba(255,255,255,0.8);
+
+    color:#6d597a;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    box-shadow:
+        0 12px 30px rgba(90,65,100,0.10);
+
+    z-index:5;
+
+    animation:
+        badgeFloat 4s ease-in-out infinite;
+}
+
+
+.badge-one{
+
+    top:65px;
+
+    left:5px;
+}
+
+
+.badge-two{
+
+    right:0;
+
+    top:145px;
+
+    animation-delay:1s;
+}
+
+
+.badge-three{
+
+    bottom:65px;
+
+    left:25px;
+
+    animation-delay:2s;
+}
+
+
+/* FOUNDER CONTENT */
+
+.founder-content{
+
+    position:relative;
+
+    z-index:4;
+}
+
+
+.founder-eyebrow{
+
+    font-size:11px;
+
+    letter-spacing:5px;
+
+    font-weight:600;
+
+    color:#c084fc;
+
+    margin-bottom:18px;
+}
+
+
+.founder-content h2{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:48px;
+
+    line-height:1.2;
+
+    font-weight:500;
+
+    color:#6d597a;
+
+    margin-bottom:8px;
+}
+
+
+.founder-content h2 span{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:70px;
+
+    color:#c8a2ff;
+
+    margin-left:5px;
+}
+
+
+.founder-name{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:#6d597a;
+
+    margin-top:18px;
+}
+
+
+.founder-role{
+
+    margin-top:7px;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#a087aa;
+}
+
+
+.founder-intro{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#6d597a;
+
+    margin-top:30px;
+
+    max-width:620px;
+
+    font-weight:500;
+}
+
+
+.founder-description{
+
+    font-size:14px;
+
+    line-height:1.95;
+
+    color:#7b6d82;
+
+    margin-top:15px;
+
+    max-width:650px;
+}
+
+
+/* FOUNDER STATS */
+
+.founder-stats{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:32px;
+}
+
+
+.founder-stats div{
+
+    min-width:115px;
+
+    padding:16px 15px;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,0.52);
+
+    border:
+        1px solid rgba(255,255,255,0.72);
+
+    text-align:center;
+
+    transition:0.35s;
+}
+
+
+.founder-stats div:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 15px 30px rgba(192,132,252,0.12);
+}
+
+
+.founder-stats strong{
+
+    display:block;
+
+    font-size:24px;
+
+    color:#c084fc;
+}
+
+
+.founder-stats span{
+
+    display:block;
+
+    font-size:9px;
+
+    margin-top:5px;
+
+    color:#817286;
+
+    letter-spacing:0.5px;
+}
+
+
+/* FOUNDER BUTTON */
+
+.founder-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:32px;
+
+    padding:15px 24px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5c2ff,
+            #c084fc,
+            #7dd3fc
+        );
+
+    background-size:200% 200%;
+
+    box-shadow:
+        0 12px 30px rgba(192,132,252,0.22);
+
+    transition:0.4s;
+}
+
+
+.founder-button:hover{
+
+    transform:translateY(-5px);
+
+    background-position:right center;
+
+    box-shadow:
+        0 18px 38px rgba(192,132,252,0.32);
+}
+
+
+.founder-button span{
+
+    font-size:20px;
+
+    line-height:0;
+}
+
+
+/* =====================================================
+   NEXMUN FEATURE
+===================================================== */
+
+.conference-preview{
+
+    padding:145px 8%;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.conference-label{
+
+    font-size:11px;
+
+    letter-spacing:5px;
+
+    font-weight:600;
+
+    color:#c084fc;
+
+    margin-bottom:15px;
+}
+
+
+.conference-preview h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:72px;
+
+    font-weight:400;
+
+    color:#c8a2ff;
+
+    margin-bottom:20px;
+}
+
+
+.conference-preview > p{
+
+    max-width:800px;
+
+    margin:0 auto 60px;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#6d597a;
+}
+
+
+/* CONFERENCE GLASS */
+
+.conference-box{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:55px;
+
+    border-radius:50px;
+
+    background:
+        rgba(255,255,255,0.56);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+    border:
+        1px solid rgba(255,255,255,0.8);
+
+    box-shadow:
+        0 30px 80px rgba(80,55,95,0.09);
+}
+
+
+/* STATS */
+
+.conference-stats{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+}
+
+
+.conference-stat{
+
+    padding:30px 18px;
+
+    border-radius:27px;
+
+    background:
+        rgba(255,255,255,0.55);
+
+    border:
+        1px solid rgba(255,255,255,0.75);
+
+    transition:0.4s;
+}
+
+
+.conference-stat:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 18px 35px rgba(192,132,252,0.13);
+}
+
+
+.conference-stat-number{
+
+    font-size:43px;
+
+    font-weight:700;
+
+    color:#c084fc;
+
+    line-height:1.2;
+}
+
+
+.conference-stat-title{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#6d597a;
+
+    margin-top:8px;
+}
+
+
+.conference-stat-text{
+
+    font-size:11px;
+
+    line-height:1.6;
+
+    color:#87758d;
+
+    margin-top:7px;
+}
+
+
+/* COMMITTEE PILLS */
+
+.committee-heading{
+
+    margin-top:55px;
+
+    font-size:18px;
+
+    color:#6d597a;
+
+    font-weight:600;
+}
+
+
+.committee-list{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:22px;
+}
+
+
+.committee-list span{
+
+    padding:10px 20px;
+
+    border-radius:40px;
+
+    color:white;
+
+    font-size:11px;
+
+    font-weight:600;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5c2ff,
+            #c084fc,
+            #7dd3fc
+        );
+
+    box-shadow:
+        0 8px 20px rgba(192,132,252,0.18);
+}
+
+
+/* CONFERENCE BUTTON */
+
+.conference-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:38px;
+
+    padding:15px 28px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5c2ff,
+            #c084fc,
+            #7dd3fc
+        );
+
+    box-shadow:
+        0 12px 30px rgba(192,132,252,0.22);
+
+    transition:0.4s;
+}
+
+
+.conference-button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 18px 38px rgba(192,132,252,0.32);
+}
+
+
+/* =====================================================
+   QUOTE
+===================================================== */
+
+.quote-section{
+
+    padding:120px 10%;
+
+    text-align:center;
+}
+
+
+.quote{
+
+    font-size:38px;
+
+    line-height:1.8;
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-family:'Great Vibes',cursive;
+
+    color:#b78ce8;
+}
+
+
+.quote-mark{
+
+    font-family:Georgia,serif;
+
+    font-size:80px;
+
+    line-height:0;
+
+    color:#d8b8f7;
+
+    vertical-align:-25px;
+
+    margin-right:5px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer{
+
+    padding:55px 20px;
+
+    text-align:center;
+
+    color:#8a7a8f;
+
+    font-size:13px;
+
+    border-top:
+        1px solid rgba(109,89,122,0.08);
+}
+
+
+.footer strong{
+
+    color:#c084fc;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-14px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+
+@keyframes spin{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+@keyframes founderFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+
+@keyframes founderRotate{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+@keyframes badgeFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-7px);
+    }
+}
+
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:950px){
+
+    .founder-inner{
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+        padding:55px 45px;
+
+        text-align:center;
+    }
+
+
+    .founder-visual{
+
+        min-height:360px;
+    }
+
+
+    .founder-content{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+
+    .founder-intro,
+    .founder-description{
+
+        max-width:700px;
+    }
+
+
+    .founder-stats{
+
+        justify-content:center;
+    }
+
+
+    .conference-stats{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media(max-width:768px){
 
-nav{
-padding:16px 20px;
-flex-direction:column;
-gap:12px;
+    nav{
+
+        padding:15px 18px;
+
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+
+    .logo{
+
+        font-size:39px;
+    }
+
+
+    .navlinks{
+
+        gap:17px;
+
+        width:100%;
+
+        justify-content:center;
+
+        overflow-x:auto;
+
+        padding-bottom:4px;
+    }
+
+
+    .navlinks a{
+
+        font-size:13px;
+
+        white-space:nowrap;
+    }
+
+
+    .hero{
+
+        padding:
+            150px 7%
+            80px;
+    }
+
+
+    .hero h1{
+
+        font-size:72px;
+    }
+
+
+    .hero p{
+
+        font-size:18px;
+
+        line-height:1.75;
+    }
+
+
+    .hero-sub{
+
+        font-size:10px !important;
+
+        letter-spacing:2px;
+    }
+
+
+    .explore-btn{
+
+        font-size:13px;
+
+        padding:15px 30px;
+    }
+
+
+    .section{
+
+        padding:90px 7%;
+    }
+
+
+    .section-title{
+
+        font-size:50px;
+
+        margin-bottom:35px;
+    }
+
+
+    .cards{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+
+    .card{
+
+        width:100%;
+
+        max-width:500px;
+
+        padding:32px 27px;
+    }
+
+
+    .founder-section{
+
+        padding:90px 5%;
+    }
+
+
+    .founder-inner{
+
+        padding:40px 22px;
+
+        border-radius:35px;
+    }
+
+
+    .founder-visual{
+
+        min-height:280px;
+    }
+
+
+    .founder-monogram{
+
+        width:200px;
+
+        height:200px;
+    }
+
+
+    .founder-monogram span{
+
+        font-size:105px;
+    }
+
+
+    .founder-monogram small{
+
+        font-size:9px;
+
+        letter-spacing:5px;
+    }
+
+
+    .founder-badge{
+
+        font-size:9px;
+
+        padding:9px 13px;
+    }
+
+
+    .badge-one{
+
+        top:20px;
+
+        left:0;
+    }
+
+
+    .badge-two{
+
+        right:0;
+
+        top:90px;
+    }
+
+
+    .badge-three{
+
+        bottom:20px;
+
+        left:5px;
+    }
+
+
+    .founder-content h2{
+
+        font-size:38px;
+    }
+
+
+    .founder-content h2 span{
+
+        font-size:53px;
+
+        display:block;
+
+        margin-top:-3px;
+    }
+
+
+    .founder-name{
+
+        font-size:19px;
+    }
+
+
+    .founder-role{
+
+        font-size:8px;
+
+        letter-spacing:2px;
+    }
+
+
+    .founder-intro{
+
+        font-size:15px;
+
+        line-height:1.8;
+    }
+
+
+    .founder-description{
+
+        font-size:13px;
+
+        line-height:1.8;
+    }
+
+
+    .founder-stats{
+
+        width:100%;
+
+        gap:7px;
+    }
+
+
+    .founder-stats div{
+
+        min-width:0;
+
+        flex:1;
+
+        padding:13px 7px;
+    }
+
+
+    .founder-stats strong{
+
+        font-size:20px;
+    }
+
+
+    .founder-stats span{
+
+        font-size:8px;
+    }
+
+
+    .founder-button{
+
+        font-size:11px;
+
+        padding:13px 19px;
+    }
+
+
+    .conference-preview{
+
+        padding:90px 5%;
+    }
+
+
+    .conference-preview h2{
+
+        font-size:51px;
+    }
+
+
+    .conference-preview > p{
+
+        font-size:14px;
+
+        line-height:1.8;
+    }
+
+
+    .conference-box{
+
+        padding:28px 18px;
+
+        border-radius:32px;
+    }
+
+
+    .conference-stats{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .conference-stat{
+
+        padding:25px;
+    }
+
+
+    .quote-section{
+
+        padding:85px 7%;
+    }
+
+
+    .quote{
+
+        font-size:28px;
+    }
+
+
+    .d5,
+    .d6{
+
+        display:none;
+    }
 }
 
-.logo{
-font-size:40px;
-}
 
-.nav-links,
-.navlinks{
-gap:14px;
-flex-wrap:nowrap;
-justify-content:center;
-overflow-x:auto;
-width:100%;
-padding-bottom:5px;
-}
-  
-.nav-links a,
-.navlinks a{
-font-size:14px;
-}
-
-.hero{
-padding:140px 8% 80px;
-}
-
-.hero h1{
-font-size:62px;
-line-height:1.1;
-}
-
-.hero p{
-font-size:26px;
-margin-top:15px;
-line-height:1.8;
-max-width:850px;
-width:100%;
-}
-
-.section-title{
-font-size:48px;
-margin-bottom:30px;
-}
-
-.content-section,
-.events-section,
-.contact-section,
-.why-section{
-padding:90px 8%;
-}
-
-.section-text{
-font-size:17px;
-padding:30px;
-line-height:2;
-border-radius:28px;
-}
-
-.cards{
-flex-direction:column;
-align-items:center;
-}
-
-.card{
-width:100%;
-max-width:500px;
-padding:30px;
-border-radius:28px;
-}
-
-.card h2{
-font-size:28px;
-}
-
-.card p{
-font-size:16px;
-line-height:1.8;
-}
-
-.contact-form{
-padding:30px;
-border-radius:28px;
-}
-
-input,
-textarea{
-font-size:15px;
-padding:15px;
-}
-
-button,
-.register-btn{
-width:100%;
-font-size:16px;
-padding:16px;
-}
-
-.footer{
-padding:40px 20px;
-font-size:14px;
-}
-
-/* Smaller doodles */
-
-.doodle{
-opacity:0.18;
-}
-
-.d1,.d2,.d3,.d4,.d5,.d6{
-font-size:45px !important;
-}
-
-/* Reduce bubbles */
-
-.bubble{
-opacity:0.18;
-}
-
-}
-
-/* ================= SMALL PHONES ================= */
+/* =====================================================
+   SMALL PHONES
+===================================================== */
 
 @media(max-width:480px){
 
-.logo{
-font-size:34px;
-}
+    .hero h1{
 
-.hero{
-min-height:90vh;
-padding-top:170px;
-}
+        font-size:58px;
+    }
 
-.hero h1{
-font-size:48px;
-}
 
-.hero p{
-font-size:16px;
-line-height:1.7;
-}
+    .hero p{
 
-.section-title{
-font-size:40px;
-}
+        font-size:16px;
+    }
 
-.section-text{
-font-size:15px;
-padding:24px;
-line-height:1.9;
-}
 
-.card{
-padding:24px;
-}
-.card{
-width:100%;
-max-width:100%;
-}
-.card h2{
-font-size:24px;
-}
+    .section-title{
 
-.card p{
-font-size:15px;
-}
+        font-size:43px;
+    }
 
-.tag{
-font-size:12px;
-padding:8px 18px;
-}
 
-.contact-form{
-padding:24px;
-}
+    .card h3{
 
-input,
-textarea{
-font-size:14px;
-}
+        font-size:27px;
+    }
 
-button,
-.register-btn{
-font-size:15px;
-padding:15px;
-}
 
-.footer{
-font-size:13px;
-}
-  
-/* Hide extra doodles on very small screens */
+    .conference-preview h2{
 
-.d5,
-.d6{
-display:none;
-}
+        font-size:45px;
+    }
 
+
+    .quote{
+
+        font-size:25px;
+    }
+
+
+    .footer{
+
+        font-size:11px;
+    }
 }
 
 </style>
+
 </head>
+
+
 <body>
 
-<nav>
-<div class="logo">NEX</div>
 
-<div class="navlinks">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="events.html">Events</a>
-<a href="contact.html">Contact</a>
-</div>
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav>
+
+    <div class="logo">
+        NEX
+    </div>
+
+    <div class="navlinks">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="events.html">
+            Events
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
 </nav>
+
+
+<!-- =====================================================
+     DECORATIVE DOODLES
+===================================================== -->
 
 <div class="doodle d1">✦</div>
 <div class="doodle d2">☁</div>
@@ -482,107 +2055,455 @@ display:none;
 <div class="doodle d5">♡</div>
 <div class="doodle d6">✧</div>
 
-<div class="hero">
 
-<h1>NEX</h1>
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-<p>
-The Future of Debate, Diplomacy, Leadership, and Youth Empowerment.
-</p>
+<section class="hero">
 
-<a href="about.html" style="text-decoration:none;">
+    <h1>
+        NEX
+    </h1>
 
-<button style="
-width:360px;
-padding:20px 45px;
+    <div class="hero-line"></div>
 
-font-size:22px;
-font-family:'Poppins',sans-serif;
-font-weight:600;
+    <p>
+        The Future of Debate, Diplomacy, Leadership,
+        and Youth Empowerment.
+    </p>
 
-display:flex;
-justify-content:center;
-align-items:center;
+    <p class="hero-sub">
+        Where young voices become future leaders
+    </p>
 
-color:white;
+    <a href="about.html" class="explore-btn">
+        ✨ Explore NEX
+        <span>→</span>
+    </a>
 
-background:linear-gradient(135deg,#f5c2ff,#c084fc,#7dd3fc);
+</section>
 
-border:none;
-border-radius:60px;
 
-cursor:pointer;
+<!-- =====================================================
+     OUR AIMS
+===================================================== -->
 
-box-shadow:
-0 12px 35px rgba(192,132,252,0.45),
-0 0 25px rgba(125,211,252,0.35);
+<section class="section">
 
-transition:0.4s ease;
+    <h2 class="section-title">
+        Our Aims
+    </h2>
 
-letter-spacing:1px;
-"
 
-onmouseover="
-this.style.transform='scale(1.06)';
-"
+    <div class="cards">
 
-onmouseout="
-this.style.transform='scale(1)';
-"
 
->
+        <div class="card">
 
-✨ Explore NEX
+            <h3>
+                Leadership
+            </h3>
 
-</button>
+            <p>
+                Develop confident young leaders,
+                encourage responsible decision-making,
+                inspire initiative and build meaningful
+                teamwork.
+            </p>
 
-</a>
-</div>
+        </div>
 
-<div class="section">
 
-<h2 class="section-title">Our Aims</h2>
+        <div class="card">
 
-<div class="cards">
+            <h3>
+                Diplomacy
+            </h3>
 
-<div class="card">
-<h3>Leadership</h3>
-<p>
-• Develop confident young leaders<br><br>
-• Encourage responsible decision-making<br><br>
-• Inspire initiative and teamwork
-</p>
-</div>
+            <p>
+                Promote respectful discussion,
+                develop global awareness and encourage
+                peaceful exchange of ideas through
+                diplomacy and dialogue.
+            </p>
 
-<div class="card">
-<h3>Diplomacy</h3>
-<p>
-• Promote respectful discussion<br><br>
-• Build global awareness<br><br>
-• Encourage peaceful exchange of ideas
-</p>
-</div>
+        </div>
 
-<div class="card">
-<h3>Communication</h3>
-<p>
-• Strengthen public speaking<br><br>
-• Build confidence in expression<br><br>
-• Encourage analytical thinking
-</p>
-</div>
 
-</div>
+        <div class="card">
 
-</div>
+            <h3>
+                Communication
+            </h3>
 
-<div class="section">
+            <p>
+                Strengthen public speaking,
+                improve confidence in expression and
+                encourage analytical and critical
+                thinking.
+            </p>
 
-<h2 class="quote">
-“Every great movement begins with a conversation.”
-</h2>
+        </div>
 
-</div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PERSON BEHIND NEX
+===================================================== -->
+
+<section class="founder-section" id="founder">
+
+    <div class="founder-inner">
+
+
+        <!-- VISUAL -->
+
+        <div class="founder-visual">
+
+            <div class="founder-glow"></div>
+
+
+            <div class="founder-monogram">
+
+                <span>
+                    H
+                </span>
+
+                <small>
+                    NEX
+                </small>
+
+            </div>
+
+
+            <div class="founder-badge badge-one">
+                ✦ Founder
+            </div>
+
+
+            <div class="founder-badge badge-two">
+                ◇ Organizer
+            </div>
+
+
+            <div class="founder-badge badge-three">
+                ✧ Developer
+            </div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <div class="founder-content">
+
+            <div class="founder-eyebrow">
+                THE PERSON BEHIND NEX
+            </div>
+
+
+            <h2>
+                Meet the mind behind
+                <span>NEX.</span>
+            </h2>
+
+
+            <div class="founder-name">
+                Hasinimalar Ganeshkumar
+            </div>
+
+
+            <div class="founder-role">
+                Founder • Organizer • Developer
+            </div>
+
+
+            <p class="founder-intro">
+                NEX began with a simple idea —
+                to create a space where young people
+                could speak, question, debate and lead.
+            </p>
+
+
+            <p class="founder-description">
+
+                Hasinimalar Ganeshkumar is the founder
+                and organizer behind NEX, working across
+                youth leadership, Model United Nations,
+                debate and digital development.
+
+                From organizing NEXMUN Youth Forum to
+                building the digital presence of NEX,
+                the journey combines leadership,
+                creativity and technology.
+
+            </p>
+
+
+            <div class="founder-stats">
+
+                <div>
+
+                    <strong>
+                        2026
+                    </strong>
+
+                    <span>
+                        NEXMUN Launch
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        200
+                    </strong>
+
+                    <span>
+                        Delegates
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        4
+                    </strong>
+
+                    <span>
+                        Committees
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="about.html" class="founder-button">
+
+                Discover the NEX Story
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NEXMUN 2026
+===================================================== -->
+
+<section class="conference-preview">
+
+    <div class="conference-label">
+        NEXMUN • 2026
+    </div>
+
+
+    <h2>
+        Where the NEX Journey Began
+    </h2>
+
+
+    <p>
+
+        NEXMUN Youth Forum 2026 marked an important
+        chapter in the NEX journey, bringing young
+        delegates together through committee
+        simulations, diplomacy, discussion and
+        collaborative problem-solving.
+
+    </p>
+
+
+    <div class="conference-box">
+
+
+        <div class="conference-stats">
+
+
+            <!-- COMMITTEES -->
+
+            <div class="conference-stat">
+
+                <div class="conference-stat-number">
+                    4
+                </div>
+
+                <div class="conference-stat-title">
+                    Committees
+                </div>
+
+                <div class="conference-stat-text">
+                    Four distinct committee experiences
+                    designed around debate, diplomacy
+                    and creative discussion.
+                </div>
+
+            </div>
+
+
+            <!-- DELEGATES -->
+
+            <div class="conference-stat">
+
+                <div class="conference-stat-number">
+                    200
+                </div>
+
+                <div class="conference-stat-title">
+                    Delegates
+                </div>
+
+                <div class="conference-stat-text">
+                    Young participants who came together
+                    to represent ideas, perspectives
+                    and nations.
+                </div>
+
+            </div>
+
+
+            <!-- REVIEWS -->
+
+            <div class="conference-stat">
+
+                <div class="conference-stat-number">
+                    4.11★
+                </div>
+
+                <div class="conference-stat-title">
+                    Mymun Rating
+                </div>
+
+                <div class="conference-stat-text">
+                    An overall rating reflected through
+                    participant feedback on the Mymun
+                    platform.
+                </div>
+
+            </div>
+
+
+            <!-- FEEDBACK -->
+
+            <div class="conference-stat">
+
+                <div class="conference-stat-number">
+                    Outstanding
+                </div>
+
+                <div class="conference-stat-title">
+                    Participant Feedback
+                </div>
+
+                <div class="conference-stat-text">
+                    Feedback from participants highlighted
+                    the academic and engaging nature
+                    of the conference experience.
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- COMMITTEES -->
+
+        <div class="committee-heading">
+            Four Committees. One Conference.
+        </div>
+
+
+        <div class="committee-list">
+
+            <span>
+                AIPPM
+            </span>
+
+            <span>
+                UNEP
+            </span>
+
+            <span>
+                JCC
+            </span>
+
+            <span>
+                MINISTRY OF MAGIC
+            </span>
+
+        </div>
+
+
+        <a href="events.html" class="conference-button">
+
+            Explore NEXMUN 2026
+
+            <span>
+                →
+            </span>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     QUOTE
+===================================================== -->
+
+<section class="quote-section">
+
+    <div class="quote">
+
+        <span class="quote-mark">
+            “
+        </span>
+
+        Every great movement begins
+        with a conversation.
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    © 2026
+    <strong>
+        NEX Debate Organization
+    </strong>
+    — Building Future Voices.
+
+</footer>
+
 
 </body>
+
 </html>
+```
